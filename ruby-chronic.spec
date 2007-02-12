@@ -1,5 +1,5 @@
 Summary:	Natural language date parser for Ruby
-Summary(pl):	Analizator dat w jêzyku naturalnym dla jêzyka Ruby
+Summary(pl.UTF-8):   Analizator dat w jÄ™zyku naturalnym dla jÄ™zyka Ruby
 Name:		ruby-chronic
 Version:	0.1.4
 Release:	1
@@ -20,12 +20,12 @@ dates/times in a wide variety of standard and natural formats from
 simple things like "tomorrow" to comples things like "7 hours before
 tomorrow at noon".
 
-%description -l pl
-Chronic to napisany w czystym Rubym analizator dat w jêzyku
-naturalnym. Mo¿e analizowaæ daty i czasy w szerokim zakresie
-standardów i formatów naturalnych od prostych takich jak "tomorrow"
-(jutro) do bardziej z³o¿onych jak "7 hours before tomorrow at noon" (7
-godzin przed jutrzejszym po³udniem).
+%description -l pl.UTF-8
+Chronic to napisany w czystym Rubym analizator dat w jÄ™zyku
+naturalnym. MoÅ¼e analizowaÄ‡ daty i czasy w szerokim zakresie
+standardÃ³w i formatÃ³w naturalnych od prostych takich jak "tomorrow"
+(jutro) do bardziej zÅ‚oÅ¼onych jak "7 hours before tomorrow at noon" (7
+godzin przed jutrzejszym poÅ‚udniem).
 
 
 %prep
