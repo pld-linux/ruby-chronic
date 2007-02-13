@@ -1,5 +1,5 @@
 Summary:	Natural language date parser for Ruby
-Summary(pl.UTF-8):   Analizator dat w języku naturalnym dla języka Ruby
+Summary(pl.UTF-8):	Analizator dat w języku naturalnym dla języka Ruby
 Name:		ruby-chronic
 Version:	0.1.4
 Release:	1
