@@ -1,15 +1,15 @@
 Summary:	Natural language date parser for Ruby
 Summary(pl.UTF-8):	Analizator dat w języku naturalnym dla języka Ruby
 Name:		ruby-chronic
-Version:	0.1.4
+Version:	0.2.3
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/14040/chronic-0.1.4.gem
-# Source0-md5:	54204d527c502b42daed33bf9b1ce3f8
+Source0:	http://rubyforge.org/frs/download.php/22394/chronic-%{version}.gem
+# Source0-md5:	e4496710d1f012c343fdea254c4b5827
 URL:		http://chronic.rubyforge.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	setup.rb >= 3.3.1
 Requires:	ruby-builder
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,6 +51,7 @@ ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
 cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
+%{__rm} $RPM_BUILD_ROOT%{ruby_ridir}/created.rid
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,4 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc rdoc
 %{ruby_rubylibdir}/chronic*
+%dir %{ruby_rubylibdir}/numerizer
+%{ruby_rubylibdir}/numerizer/numerizer.rb
 %{ruby_ridir}/*
